@@ -92,7 +92,7 @@
     <b>Modo obra · alineación manual</b>
     <ol>
       <li>Párate junto a la columna del <b>pin magenta</b> (<span id="pin1"></span>) y toca <b>Ver a escala real 1:1</b>.</li>
-      <li>Apunta al piso hasta que aparezca el modelo. <b>Arrastra con un dedo</b> hasta que el pin magenta quede en la base de esa columna.</li>
+      <li>Apunta al piso al pie de esa columna: el modelo aparece con el <b>pin magenta</b> al centro. <b>Arrástralo con un dedo</b> hasta que quede en la base de la columna.</li>
       <li><b>Gira con dos dedos</b> hasta que el <b>pin verde</b> (<span id="pin2"></span>) caiga sobre su columna real.</li>
       <li>Revisa una columna intermedia: si se desfasa más de ~20 cm, cierra y repite desde el pin más cercano.</li>
     </ol>
@@ -105,6 +105,7 @@
     <span><i style="background:var(--naranja)"></i>Reporte actual</span>
     <span><i style="background:var(--verde)"></i>Reportes anteriores</span>
     <span><i style="background:var(--gris)"></i>Pendiente</span>
+    <span><i style="background:#cfcac2;border:1px solid #b8b2a8"></i>Losa de sótano (referencia)</span>
   </div>
   <div class="nota" id="nota"></div>
   <div class="nota"><b>Cómo usarlo:</b> toca un botón, apunta la cámara al piso y mueve el celular despacio hasta que aparezca el modelo.
@@ -128,7 +129,8 @@
   // Compatibilidad: un solo modelo (formato v1) o lista "modelos" (v2)
   const lista = cfg.modelos || [{id:'modelo', titulo:cfg.zona, zona:cfg.zona, modo:'A',
                                  nota:cfg.nota, glb:cfg.glb, usdz:cfg.usdz}];
-  const pedido = new URLSearchParams(location.search).get('zona');   // QR de obra: ?zona=ID
+  let pedido = new URLSearchParams(location.search).get('zona');
+  if (pedido === 'obra-r8') pedido = 'obra-b3';   // QR anterior -> estación 1
 
   const mostrar = (m) => {
     mv.src = m.glb + '?v=' + v;          // ?v= cambia cada semana -> nunca se ve un modelo viejo

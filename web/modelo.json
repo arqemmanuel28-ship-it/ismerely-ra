@@ -1,5 +1,5 @@
 {
-  "version": "R8-v3",
+  "version": "R8-v4",
   "reporte": "Reporte No. 8 · Estructura de acero",
   "periodo": "16 – 21 nov 2026",
   "modelos": [
@@ -22,15 +22,26 @@
       "usdz": "modelos/ismerely_r8_presentacion.usdz"
     },
     {
-      "id": "obra-r8",
-      "titulo": "Zona ejes 1–3 / A–E",
-      "zona": "Modo obra · zona ejes 1–3 / A–E · pines en columnas A,1 y E,1",
+      "id": "obra-b3",
+      "titulo": "Estación 1 · Sótano B,3",
+      "zona": "Modo obra · estación 1 · QR en columna B,3 (cara norte, hacia eje 1) · piso terminado del sótano",
       "modo": "B",
-      "pin1": "columna A,1",
-      "pin2": "columna E,1, a 31.34 m sobre el eje 1",
-      "nota": "Alineación manual. Referencia visual de avance; no sirve para trazo.",
-      "glb": "modelos/ismerely_r8_obra.glb",
-      "usdz": "modelos/ismerely_r8_obra.usdz"
+      "pin1": "columna B,3, donde está el QR",
+      "pin2": "columna M,3, a 48.00 m sobre el eje 3",
+      "nota": "La placa magenta del modelo marca el QR (cara norte de B,3 a 1.50 m): si coincide con el QR real, la altura y el lado son correctos. Alineación manual, precisión aprox. ±10–30 cm. Referencia visual de avance; no sirve para trazo.",
+      "glb": "modelos/ismerely_obra_b3.glb",
+      "usdz": "modelos/ismerely_obra_b3.usdz"
+    },
+    {
+      "id": "obra-h19a",
+      "titulo": "Estación 2 · Rampa H,19A",
+      "zona": "Modo obra · estación 2 · arranque de rampa, última columna del eje H (H,19A) · piso del sótano",
+      "modo": "B",
+      "pin1": "columna H,19A, la última del eje H",
+      "pin2": "columna H,19, a 8.00 m sobre el eje H",
+      "nota": "Para ver la estructura desde el acceso. Alineación manual, precisión aprox. ±10–30 cm. Referencia visual de avance; no sirve para trazo.",
+      "glb": "modelos/ismerely_obra_h19a.glb",
+      "usdz": "modelos/ismerely_obra_h19a.usdz"
     },
     {
       "id": "presentacion",
