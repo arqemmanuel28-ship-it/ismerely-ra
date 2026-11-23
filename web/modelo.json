@@ -1,0 +1,45 @@
+{
+  "version": "R8-v3",
+  "reporte": "Reporte No. 8 · Estructura de acero",
+  "periodo": "16 – 21 nov 2026",
+  "modelos": [
+    {
+      "id": "completo",
+      "titulo": "Estructura completa",
+      "zona": "Estructura de acero completa · 157 columnas y 5,215 vigas · avance al R8",
+      "modo": "A",
+      "nota": "Naranja: R8 (110 tramos). Verde: reportes anteriores. Gris acero: pendiente. Modelo de ~13 MB: espera unos segundos a que cargue.",
+      "glb": "modelos/ismerely_completo.glb",
+      "usdz": "modelos/ismerely_completo.usdz"
+    },
+    {
+      "id": "r8",
+      "titulo": "R8 · Zona ejes 1–3 / A–E",
+      "zona": "Estructura de acero · zona del R8 (ejes 1–3 / A–E) · todos los niveles",
+      "modo": "A",
+      "nota": "Naranja: 110 tramos del R8 en losa tapa de N2. Verde: reportes anteriores. Gris: pendiente.",
+      "glb": "modelos/ismerely_r8_presentacion.glb",
+      "usdz": "modelos/ismerely_r8_presentacion.usdz"
+    },
+    {
+      "id": "obra-r8",
+      "titulo": "Zona ejes 1–3 / A–E",
+      "zona": "Modo obra · zona ejes 1–3 / A–E · pines en columnas A,1 y E,1",
+      "modo": "B",
+      "pin1": "columna A,1",
+      "pin2": "columna E,1, a 31.34 m sobre el eje 1",
+      "nota": "Alineación manual. Referencia visual de avance; no sirve para trazo.",
+      "glb": "modelos/ismerely_r8_obra.glb",
+      "usdz": "modelos/ismerely_r8_obra.usdz"
+    },
+    {
+      "id": "presentacion",
+      "titulo": "Prueba de escala",
+      "zona": "Cubo patrón 1.00 m + 3 vigas IPR W18×119 de 6.00 m",
+      "modo": "A",
+      "nota": "Mide el cubo con la app Medidas del iPhone o con flexómetro: debe dar 1.00 m por lado.",
+      "glb": "modelos/ismerely_estructura.glb",
+      "usdz": "modelos/ismerely_estructura.usdz"
+    }
+  ]
+}
